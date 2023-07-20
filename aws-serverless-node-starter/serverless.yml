@@ -1,10 +1,15 @@
-service: aws-serverless-node-starter
+service: aws-serverless-node
 frameworkVersion: '3'
 
 provider:
   name: aws
   runtime: nodejs18.x
+  region: eu-central-1
+  environment:
+    ENV1: "ENV1_VALUE"
 
 functions:
-  aws-serverless-node-starter:
+  starter:
     handler: index.handler
+    environment:
+      ENV2: "ENV2_VALUE"
