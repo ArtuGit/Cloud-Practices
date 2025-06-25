@@ -1,8 +1,21 @@
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
+# Node modules
+**/node_modules/
 
-# AWS SAM
-*/.aws-sam/
+# Serverless Framework
+**/.serverless/
+
+# IDEs
+.vscode/ 
+.idea/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+**/.env
+
+
